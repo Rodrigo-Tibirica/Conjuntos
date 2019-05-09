@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
+class Main {
+	
+
+
+  public static void main(String[] args){
+
+	ArrayList<Integer> A = new ArrayList();
+	ArrayList<Integer> B =  new ArrayList();
+	ArrayList<Integer> Resultado = new ArrayList();
+	A.addAll(Arrays.asList(1,2,3,4));
+	B.addAll(Arrays.asList(4,5,6,7));
+	
+		Resultado.addAll(B);
+		for(Integer D : A){
+			if(!Resultado.contains(D)){
+
+				Resultado.add(D);
+			}
+		} System.out.println(Resultado);
+  }
+}
